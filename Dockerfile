@@ -3,7 +3,7 @@ RUN mkdir /app
 WORKDIR /app
 COPY ./ .
 
-ENV VITE_STD_FE_APP_URL=http://34.47.65.153:39100
+ENV VITE_STD_FE_APP_URL=http://
 
 RUN npm install -g pnpm
 RUN pnpm install
