@@ -1,0 +1,11 @@
+.login-page {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .card {
+        box-shadow: 0 0 1px;
+        padding: 50px 70px 90px;
+    }
+}

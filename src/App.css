@@ -1,0 +1,96 @@
+#root {
+    /* max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center; */
+    width: 100%;
+}
+.logo {
+    height: 5em;
+    padding: 1.5em;
+    will-change: filter;
+    transition: filter 300ms;
+}
+.logo:hover {
+    filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+    filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    a:nth-of-type(2) .logo {
+        animation: logo-spin infinite 20s linear;
+    }
+}
+
+.card {
+    padding: 2em;
+}
+
+.read-the-docs {
+    color: #888;
+}
+
+.Header_area {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    /* border-bottom-width: 1;
+    border-bottom-color: red; */
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 10px 1px;
+    height: 70px;
+    margin-bottom: 10px;
+}
+.FromWrapper {
+    display: flex;
+    height: 60px;
+}
+.ant-form-inline {
+    margin-inline-end: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #999;
+    border-radius: 50px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #777;
+}
+
+.wrapper {
+    display: grid;
+    place-items: center;
+    min-height: 100dvh;
+    /*  background: navy;*/
+}
+.content {
+    padding: 50px;
+    /* background: rgba(0, 0, 0, 0.05);*/
+    border-radius: 4px;
+}

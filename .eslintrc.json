@@ -1,0 +1,80 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint"],
+  "extends": ["airbnb", "airbnb/hooks", "plugin:@typescript-eslint/recommended"],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "rules": {
+    "no-shadow": "off",
+    "@typescript-eslint/no-shadow": ["error"],
+    "@typescript-eslint/ban-ts-comment": "off",
+    "react/react-in-jsx-scope": "off",
+    "react/require-default-props": "off",
+    "react/no-unused-prop-types": "off",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "react/jsx-no-useless-fragment": "off",
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [".js", ".jsx", ".tsx", ".ts"]
+      }
+    ],
+    "react/function-component-definition": [
+      2,
+      {
+        "namedComponents": ["arrow-function", "function-declaration"],
+        "unnamedComponents": "arrow-function"
+      }
+    ],
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/no-unused-vars": "warn",
+    "@typescript-eslint/explicit-module-boundary-types": "error",
+    "no-console": "warn",
+    "no-extra-semi": "off",
+    "no-unused-vars": "off",
+    "no-plusplus": [
+      "error",
+      {
+        "allowForLoopAfterthoughts": true
+      }
+    ],
+    "comma-dangle": "off",
+    "linebreak-style": "off",
+    "import/no-unresolved": "off",
+    "no-use-before-define": "off",
+    "import/prefer-default-export": "off",
+    "import/no-extraneous-dependencies": "off",
+    "object-curly-newline": 0
+    //"object-curly-spacing": "off",
+    //"@typescript-eslint/object-curly-spacing": "error"
+    //"quotes": "off",
+    //"arrow-parens": ["warn", "as-needed"]
+    //"no-restricted-syntax": ["error", "FunctionExpression", "WithStatement"] ,
+    //"@typescript-eslint/no-unused-vars": "error",
+    //"@typescript-eslint/no-extra-semi": "error",
+    // "max-len": [
+    //   "error",
+    //   {
+    //     "code": 120,
+    //     "ignoreRegExpLiterals": true
+    //   }
+    // ],
+    // "react/jsx-one-expression-per-line": [2, { "allow": "none" }],
+    // "react/jsx-indent": [2, 2],
+  },
+  "overrides": [
+    {
+      // enable the rule specifically for TypeScript files
+      "files": ["*.ts", "*.tsx", "*.jsx", "*.js"],
+      "rules": {
+        "@typescript-eslint/explicit-module-boundary-types": "error"
+      }
+    }
+  ]
+}

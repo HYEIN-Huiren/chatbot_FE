@@ -1,0 +1,56 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "jsx": "preserve",
+    "target": "ESNext",
+    "module": "ESNext",
+    "useDefineForClassFields": true,
+    "moduleResolution": "Node",
+    "strict": true,
+    "sourceMap": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "importHelpers": true,
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "incremental": false,
+    "skipLibCheck": true,
+    "allowImportingTsExtensions": true,
+    "noEmit": true,
+    "strictPropertyInitialization": true,
+    "experimentalDecorators": true, // package.json reflect-metadat
+    "emitDecoratorMetadata": true, // package.json reflect-metadat
+    "noImplicitAny": true,
+    "types": ["vite/client"], // "reflect-metadata"
+    "typeRoots": ["types", "typing"],
+    "allowJs": false,
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
+
+    "strictFunctionTypes": true,
+    "paths": {
+      "@/*": ["src/*"],
+      "#/*": ["typing/*"],
+      "~/*": ["setup/*"],
+      "$/*": ["public/*"],
+      "tslib": ["./node_modules/tslib/tslib.d.ts"]
+    }
+  },
+  "include": [
+    "src/**/*.jsx",
+    "src/**/*.ts",
+    "src/**/*.d.ts",
+    "src/**/*.tsx",
+    // "src/**/**/**/*.tsx",
+    // "src/**/**/**/*.ts",
+    // "src/**/**/**/*.d.ts",
+    "typing/**/*.d.ts",
+    "setup/**/*.ts",
+    "public/**/*.json",
+    "vite.config.ts",
+    "package.json",
+    ".eslintrc.json"
+  ],
+  "exclude": ["dist", "node_modules"],
+  "references": [{ "path": "./tsconfig.node.json" }]
+}

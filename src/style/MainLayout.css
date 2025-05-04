@@ -1,0 +1,41 @@
+/* Header */
+.headerBox {
+    background-color: tomato;
+    width: 100%;
+    height: 50px;
+}
+/* Mainbody */
+.Mainbody {
+    display: flex;
+}
+/* Nav */
+.navBox {
+    background-color: aquamarine;
+    width: 200px;
+}
+
+/* Main */
+.ant-layout .css-dev-only-do-not-override-1sjov6s {
+    max-height: calc(100vh - 150px);
+}
+
+.Layout-main-content {
+    height: "100%";
+    width: "calc(100vw - 300px)";
+    padding: 24;
+}
+
+.main-content {
+    /* background-color: red;*/
+    min-width: calc(100vw - 300px);
+    max-width: calc(100vw - 300px);
+    padding: 12;
+    height: "calc(100vh - 100px)";
+}
+
+/* Footer */
+.footerBox {
+    background-color: teal;
+    width: 100%;
+    height: 50px;
+}

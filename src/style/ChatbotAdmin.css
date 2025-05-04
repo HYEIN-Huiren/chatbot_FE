@@ -1,0 +1,39 @@
+/* Header */
+.adminHeader {
+    display: flex;
+    justify-content: flex-end;
+    height: 70px;
+}
+
+.searchFormWrap {
+    margin-right: 15px;
+}
+
+.searchInput {
+    height: 50px;
+}
+
+.keywordWrap {
+    /* width: 25%; */
+    z-index: 10;
+    display: flex;
+    border: 1px solid black;
+    margin-bottom: 10px;
+}
+
+.keywordContainer {
+    width: 100%;
+}
+
+.bestSearch {
+    background-color: white;
+    width: 100%;
+}
+
+.keywordItem {
+    padding-bottom: 5px;
+}
+
+.questionContainer {
+    margin-top: 20px;
+}
